@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style_home.css">
+    
+    <title>Trang Chủ</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark py-3 border-bottom border-white border-1 fixed-top" style="background-color: pink;">
+          <div class="container">
+              <a href="MyPham_homepage.html" class="navbar-brand"><span class="web-title">WebMyPham</span></a>
+              <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Nhập tên sản phẩm."/>
+                <button class="btn btn-danger pb-1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Tìm kiếm</button>
+              </div>
+              <button
+                  class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle = "collapse" 
+                  data-bs-target = "#navmenu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#account">Tài Khoản</a>
+                      </li>
+                      <li class="nav-item cart">
+                          <a href="MyPham_cart.html" class="nav-link">
+                            Giỏ Hàng 
+                            <span class="cart-number-item";">0</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Tư Vấn</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
+        <!-- Slide Show -->
+        <div id="carouselExampleIndicators" class="carousel slide pb-4" data-bs-ride="carousel">
+          <div><h2 class="text-center" style="color: pink; padding-top: 86px;">TOP SẢN PHẨM BÁN CHẠY</h2></div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner pb-3 pt-3">
+              <div class="carousel-item active">
+                <center><a href="#sanpham1"><img src="sanpham_1.jpg" class="d-block w-25" alt="..."></a></center>
+              </div>
+              <div class="carousel-item">
+                <center><a href="#sanpham2"><img src="sanpham_2.jpg" class="w-25" alt="..."></a></center>
+              </div>
+              <div class="carousel-item">
+                <center><a href="#sanpham3"><img src="sanpham_3.jpg" class="w-25" alt="..."></a></center>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <!--Danh muc san pham-->
+    <section class="p-5" style="background-color: pink;">
+      <h3 class="text-light text-center">SẢN PHẨM HIỆN ĐANG <span class="text-danger">KHUYẾN MÃI</span></h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham1.jpg"
+                    alt="sp1">
+                <div class="card-body">
+                    <h5 class="card-title">HADA LABO</h5>
+                    <p class="card-text">95.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart cart1" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_1.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 2-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham2.jpg"
+                    alt="sp2">
+                <div class="card-body">
+                    <h5 class="card-title">ROSETTE</h5>
+                    <p class="card-text">170.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart cart2" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_2.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 3-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham3.jpg"
+                    alt="sp3">
+                <div class="card-body">
+                    <h5 class="card-title">LA ROCHE POSAY</h5>
+                    <p class="card-text">280.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart cart3" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_3.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 4-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham4.jpg"
+                    alt="sp4">
+                <div class="card-body">
+                    <h5 class="card-title">CETAPHIL</h5>
+                    <p class="card-text">364.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart cart4" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_4.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 5-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham5.jpg"
+                    alt="sp5">
+                <div class="card-body">
+                    <h5 class="card-title">PAULA'S CHOICE</h5>
+                    <p class="card-text">683.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart cart5" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_5.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 6-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham6.jpeg"
+                    alt="sp6">
+                <div class="card-body">
+                    <h5 class="card-title">INSTREE</h5>
+                    <p class="card-text">320.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart cart6" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_6.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <h3 class="text-light text-center pt-4">SẢN PHẨM ĐƯỢC <span class="text-danger">ĐÁNH GIÁ CAO</span></h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!--item 7-->
+            <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham7.jpg"
+                    alt="sp7">
+                <div class="card-body">
+                    <h5 class="card-title">OXY</h5>
+                    <p class="card-text">58.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_7.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 8-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham8.jpg"
+                    alt="sp8">
+                <div class="card-body">
+                    <h5 class="card-title">SKIN1004</h5>
+                    <p class="card-text">397.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_8.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 9-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham9.jpg"
+                    alt="sp9">
+                <div class="card-body">
+                    <h5 class="card-title">BIORE</h5>
+                    <p class="card-text">182.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_9.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 10-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham10.jpg"
+                    alt="sp10">
+                <div class="card-body">
+                    <h5 class="card-title">ROVECTIN</h5>
+                    <p class="card-text">315.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_10.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 11-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham11.jpg"
+                    alt="sp11">
+                <div class="card-body">
+                    <h5 class="card-title">GGG</h5>
+                    <p class="card-text">493.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="MyPham_item_11.html" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+              <!--item 12-->
+              <div class="card shadow">
+                <img class="card-img-top"
+                    src="product_img/sanpham12.jpg"
+                    alt="sp12">
+                <div class="card-body">
+                    <h5 class="card-title">COSRX</h5>
+                    <p class="card-text">289.000đ</p>
+                    <a href="#" class="btn btn-danger add-cart" data-bs-toggle="modal" data-bs-target="#addcart">Mua</a>
+                    <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+  </section>
+  <!--Introduction-->
+  <section>
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md"></div>
+            <div class="col-md p-5">
+                <h2>About Us</h2>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Earum qui sit recusandae aperiam perspiciatis nostrum sunt dolore fugiat amet id. 
+                    Et alias laudantium maiores earum libero doloribus ab officiis, 
+                    amet dolorem mollitia fuga laboriosam commodi tenetur non voluptatem porro praesentium!
+                </p>
+                <p>
+                    Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing elit. 
+                    Possimus, debitis? Iusto modi doloribus voluptate, 
+                    totam ullam quaerat quia dolorum unde 
+                    laudantium obcaecati culpa blanditiis! 
+                    Et nam tenetur ab assumenda magni!
+                </p>
+                <a href="#" class="btn btn-secondary shadow p-3 rounded"><i class="bi bi-chevron-right"></i>Tuyển dụng</a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer class="p-5 text-white" style="background-color: pink;">
+    <div class="row">
+      <div class="col-md">
+        <div class="info">
+          <h5 class="text-secondary">Theo dõi chúng tôi</h5><br>
+          <ul>
+              <li>
+                  <a href="#">
+                      <span class="social" id="facebook"></span>
+                      <span class="txtSocial">Facebook</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="social" id="twitter"></span>
+                      <span class="txtSocial">Twitter</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <span class="social" id="google"></span>
+                      <span class="txtSocial">Google+</span>
+                  </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md">
+        <h5 class="text-secondary">Vị trí cửa hàng:</h5>
+        <div id="map"></div>
+      </div>
+    </div>
+</footer>
+  <!-- Modal Add to cart -->
+<div class="modal fade" id="addcart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Đã thêm vào giỏ hàng
+      </div>
+      <div class="modal-footer">
+        <a href="MyPham_cart.html" class="btn btn-primary">Đi đến giỏ hàng</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Account Modal-->
+  <div class="modal fade" id="account" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Đã có tài khoản?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <a href="MyPham_register.html" class="btn btn-danger">Đăng Ký</a>
+          <a href="MyPham_login.html" class="btn btn-primary">Đăng Nhập</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="position-fixed bottom-0 end-0 p-5">
+    <i class="bi bi-arrow-up-circle h1"></i>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="MyPham_homepage.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+  </script>
+    </body>
+</html>

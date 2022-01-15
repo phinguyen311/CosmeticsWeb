@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="MyPham_accountpage.css">
+        <script src="https://kit.fontawesome.com/9a9d3471c2.js" crossorigin="anonymous"></script>
+        
+        <title>Tài khoản</title>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-white">
+        <div class="container">
+            <a href="MyPham_home.html" style="color: #42ba96;">
+                <img src="showcase/brand_img_1.png" style="height: 60px;" width="82px" alt="">
+            </a>
+
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex">
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success rounded-circle" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user text-success"></i>Tài Khoản
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="MyPham_register_login.html">Đăng Nhập/Đăng Ký</a></li>
+                              <li><a class="dropdown-item" href="MyPham_accountpage.html">Tài Khoản</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item cart-icon">
+                        <a href="MyPham_maincart.html" class="btn text-success cart-icon">
+                            <i class="fas fa-shopping-cart"></i>Giỏ Hàng 
+                            <span class="cart-items"><b>0</b></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg" id = "navbar">
+        <div class = "navContainer bg-success tabs">
+            <div class="tab-item active">
+                <a class="nav-link" href="MyPham_home.html">Trang chủ</a>
+            </div>
+            <div class="tab-item">
+                <a class="nav-link" href="MyPham_shop.html">Xem sản phẩm</a>
+            </div>
+            <div class="tab-item">
+                <a class="nav-link" href="MyPham_contact.html">Tư vấn sản phẩm</a>
+            </div>
+            <div class="tab-item">
+                <a class="nav-link" href="MyPham_home.html#tuyendung">Tuyển dụng</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- Account Form -->
+    <div class="container pt-5">
+        <div class="border-bottom">
+            <h3><i class="fas fa-address-card"></i> Thông tin cá nhân</h3>
+        </div>
+        <div class="row pt-5">
+            <div class="col-2">
+                <div>
+                    <a type="button" class="account-button p-2 tab active" onclick="tabs(0)">
+                        <i class="fas fa-bell"></i> Thông báo của bạn
+                    </a>
+                </div>
+                <div>
+                    <a type="button" class="account-button p-2 tab active" onclick="tabs(1)">
+                        <i class="fas fa-user"></i> Cập nhật thông tin
+                    </a>
+                </div>
+                <div>
+                    <a type="button" class="account-button p-2 tab active" onclick="tabs(2)">
+                        <i class="fas fa-id-card"></i> Thông tin thanh toán
+                    </a>
+                </div>
+                <div>
+                    <a type="button" class="account-button p-2 tab active" onclick="tabs(3)">
+                        <i class="fas fa-address-book"></i> Sổ địa chỉ
+                    </a>
+                </div>
+                <div>
+                    <a type="button" class="account-button p-2 tab active" onclick="tabs(4)">
+                        <i class="fas fa-archive"></i> Đơn hàng đã mua
+                    </a>
+                </div>
+            </div>
+            <div class="col-10">
+                <!-- Notification -->
+                <div class="notification tabShow">
+                    <div class="row news">
+                        <div class="col-2 date">
+                            05/12/2021
+                        </div>
+                        <div class="col-10">
+                            Từ ngày 26/06/2020, Tiki áp dụng phí vận chuyển dựa trên khối lượng/ 
+                            kích thước đóng gói của các sản phẩm trong đơn hàng, 
+                            và khoảng cách giữa địa chỉ nhận hàng và kho của Tiki/nhà cung cấp/nhà bán hàng. Q
+                            uý khách có thể kiểm tra phí ở bước "Thanh toán và đặt mua". 
+                            Chương trình ưu đãi phí giao hàng của sàn Tiki sẽ được cập nhật tại 
+                            phần "Thông báo của tôi" vào mỗi tháng (áp dụng cho giao hàng tiêu chuẩn).
+                        </div>
+                    </div>
+                    <div class="row news">
+                        <div class="col-2 date">
+                            05/12/2021
+                        </div>
+                        <div class="col-10">
+                            Đơn hàng #938459758 đã sẵn sàng để giao đến quý khách. 
+                            Chúng tôi vừa bàn giao đơn hàng của quý khách đến đối tác vận chuyển Tiki Team. 
+                            Đơn hàng sẽ được giao trước 23:59 ngày 10/05/2021
+                        </div>
+                    </div>
+                    <div class="row news">
+                        <div class="col-2 date">
+                            05/12/2021
+                        </div>
+                        <div class="col-10">
+                            Hãy thay đổi mật khẩu thường xuyên để nâng cao bảo mật. Ngoài ra: 1) 
+                            Không nên sử dụng chung mật khẩu của email với mật khẩu của các tài khoản khác. 2) 
+                            Luôn đăng xuất khỏi các tài khoản sau khi sử dụng trên thiết bị công cộng 
+                            hoặc thiết bị không phải của bản thân.
+                        </div>
+                    </div>
+                    <div class="row news">
+                        <div class="col-2 date">
+                            05/12/2021
+                        </div>
+                        <div class="col-10">
+                            Từ 29/2/2020, Tiki miễn phí giao tiêu chuẩn cho đơn hàng từ 250k, áp dụng phí 19k cho đơn hàng dưới 250k. 
+                            Thay đổi áp dụng cho khách hàng không phải là thành viên TikiNOW.
+                        </div>
+                    </div>
+                </div>  
+                <!-- Account Info -->
+                <div class="accountInfo tabShow">
+                    <div>
+                        <h5 class="border-bottom border-danger border-2 pb-3">Thông tin cá nhân</h5>
+                    </div>
+                    <div class="user-name mb-3 mt-3">
+                        Họ & Tên: <br>
+                        <input type="text" class="form-control" placeholder="Ex.Nguyễn Hồ Phi" id ="user_name">
+                    </div>
+                    <div class="user-mail mb-3 mt-3">
+                        Điện thoại: <br>
+                        <input type="number" class="form-control" placeholder="Ex.0368886371" id ="user_mail">
+                    </div>
+                    <div class="user-mail mb-3 mt-3">
+                        Email: <br>
+                        <input type="text" class="form-control" placeholder="Ex.hophinguyen1132002@gmail.com" id ="user_mail">
+                    </div>
+                    <div class="user-birth mb-3 mt-3">
+                        Ngày Sinh: <br>
+                        <input type="date" class="form-control" placeholder="Ex.03/11/2002" id ="user_birth">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label>Giới tính:</label> <br>
+                        <input type="radio" id="male" value="Male" name="sex">Nam <br>
+                        <input type="radio" id="female" value="Female" name="sex">Nữ
+                    </div>
+                    <a type="button" class="btn mb-3 mt-3 text-light" href="" style="background-color: pink;">Cập nhật</a>
+                </div>
+                <!-- Kết thúc Account Info -->
+                <!-- Thông tin thanh toán -->
+                <div class="paymentInfo tabShow">
+                    <div class="border-bottom border-danger border-2 pb-3">
+                        <h5>Thông tin thanh toán của bạn</h5>
+                    </div>
+                    <div class="pt-3" style="font-size: 18px">
+                        Cài đặt hình thức thanh toán
+                    </div>
+                    <div class="p-5" style="font-size: 15px">
+                        Phương thức thanh toán của bạn: 
+                        <select style="width: 50%; height: 40px;" name="" id="">
+                            <option value="1">Thanh toán trực tiếp khi nhận hàng</option>
+                            <option value="1">Thanh toán bằng thẻ ngân hàng</option>
+                            <option value="1">Thanh toán bằng Visa</option>
+                            <option value="1">Thanh toán bằng ví điện tử</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Kết thúc Thông tin thanh toán -->
+                <!-- Sổ địa chỉ -->
+                <div class="addressBook tabShow">
+                    <div class="border-bottom border-danger border-2 pb-3">
+                        <h5>Sổ địa chỉ</h5>
+                    </div>
+                    <div>
+                        <div class="mb-3 mt-3">
+                            Địa chỉ 1:<br>
+                            <input type="text" class="form-control address" placeholder="Ex.123/45 ABCDEF phường ABC, quận ABC" id ="user_address">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            Địa chỉ 2:<br>
+                            <input type="text" class="form-control address" placeholder="Ex.123/45 ABCDEF phường ABC, quận ABC" id ="user_address">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            Địa chỉ 3:<br>
+                            <input type="text" class="form-control address" placeholder="Ex.123/45 ABCDEF phường ABC, quận ABC" id ="user_address">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            Địa chỉ 4:<br>
+                            <input type="text" class="form-control address" placeholder="Ex.123/45 ABCDEF phường ABC, quận ABC" id ="user_address">
+                        </div>
+                    </div>
+                    <a type="button" class="btn mb-3 mt-3 text-light" href="" style="background-color: pink;">Cập nhật</a>
+                </div>
+                <!-- Kết thúc sổ địa chỉ -->
+                <!-- Đơn hàng đã mua -->
+                <div class="bill tabShow">
+                    <div class="border-bottom border-danger border-2 pb-3">
+                        <h5>Đơn hàng của bạn</h5>
+                    </div>
+                    <div class="row mt-5 bill-title text-white">
+                        <div class="col-1">
+                            Mã đơn hàng
+                        </div>
+                        <div class="col-2">
+                            Ngày mua
+                        </div>
+                        <div class="col-5">
+                            Sản phẩm
+                        </div>
+                        <div class="col-2">
+                            Tổng
+                        </div>
+                        <div class="col-2">
+                            Trang thái
+                        </div>
+                    </div>
+                    <div class="row products">
+                        <div class="col-1">
+                            #abcde
+                        </div>
+                        <div class="col-2">
+                            05/12/2021
+                        </div>
+                        <div class="col-5">
+                            Thuyết thanh Onyx
+                        </div>
+                        <div class="col-2">
+                            150.000đ
+                        </div>
+                        <div class="col-2">
+                            Đã thanh toán
+                        </div>
+                    </div>
+                    <div class="row products">
+                        <div class="col-1">
+                            #abcde
+                        </div>
+                        <div class="col-2">
+                            05/12/2021
+                        </div>
+                        <div class="col-5">
+                            Thuyết thanh Onyx
+                        </div>
+                        <div class="col-2">
+                            150.000đ
+                        </div>
+                        <div class="col-2">
+                            Đã thanh toán
+                        </div>
+                    </div>
+                    <div class="row products">
+                        <div class="col-1">
+                            #abcde
+                        </div>
+                        <div class="col-2">
+                            05/12/2021
+                        </div>
+                        <div class="col-5">
+                            Thuyết thanh Onyx
+                        </div>
+                        <div class="col-2">
+                            150.000đ
+                        </div>
+                        <div class="col-2">
+                            Đã thanh toán
+                        </div>
+                    </div>
+                </div>
+                <!-- Kết thúc đơn hàng đã mua -->
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-success text-light pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img src="showcase/brand_img_1.png" style="height: 147px;" width="200px" alt="">
+                </div>
+                <div class="col-4">
+                    <h5>Mỹ Phẩm Chính Hãng <span class="text-dark">Cosmos Cosmetics</span></h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 237/61 Trần Văn Đang, P.11, Q.3 <br>
+                        Hotline: <span class="text-dark"><b>1900 2138</b></span>  <br>
+                        Tel: <span class="text-dark"><b>(84.28)15932502</b></span>  <br>
+                        Fax: <span class="text-dark"><b>(84.28)15943085</b></span> 
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h5 class="ms-4">Theo dõi chúng tôi:</h5>
+                    <a href=""><i class="fab fa-facebook me-3" style="font-size: 40px; color: black;"></i></a>
+                    <a href=""><i class="fab fa-youtube me-3" style="font-size: 40px;color: black;"></i></a>
+                    <a href=""><i class="fab fa-twitter me-3" style="font-size: 40px;color: black;"></i></a>
+                    <a href=""><i class="fab fa-google-plus me-2" style="font-size: 40px;color: black;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="MyPham_accountpage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+{
+    "status" : "success",
+    "items" : [
+        {
+            "id" : 1,
+            "title" : "HADA LABO",
+            "price" : 95000,
+            "image" : "./product_img/sanpham1.jpg"
+        },
+        {
+            "id" : 2,
+            "title" : "ROSETTE",
+            "price" : 170000,
+            "image" : "./product_img/sanpham2.jpg"
+        },
+        {
+            "id" : 3,
+            "title" : "LA ROCHE POSAY",
+            "price" : 280000,
+            "image" : "./product_img/sanpham3.jpg"
+        },
+        {
+            "id" : 4,
+            "title" : "CENTAPHIL",
+            "price" : 364000,
+            "image" : "./product_img/sanpham4.jpg"
+        },
+        {
+            "id" : 5,
+            "title" : "PAULA'S CHOICE",
+            "price" : 683000,
+            "image" : "./product_img/sanpham5.jpg"
+        },
+        {
+            "id" : 6,
+            "title" : "INSTREE",
+            "price" : 320000,
+            "image" : "./product_img/sanpham6.jpeg"
+        },
+        {
+            "id" : 7,
+            "title" : "OXY",
+            "price" : 58000,
+            "image" : "./product_img/sanpham7.jpg"
+        },
+        {
+            "id" : 8,
+            "title" : "SKIN1004",
+            "price" : 397000,
+            "image" : "./product_img/sanpham8.jpg"
+        },
+        {
+            "id" : 9,
+            "title" : "BIORE",
+            "price" : 182000,
+            "image" : "./product_img/sanpham9.jpg"
+        },
+        {
+            "id" : 10,
+            "title" : "ROVECTIN",
+            "price" : 315000,
+            "image" : "./product_img/sanpham10.jpg"
+        },
+        {
+            "id" : 11,
+            "title" : "GGG",
+            "price" : 493000,
+            "image" : "./product_img/sanpham11.jpg"
+        },
+        {
+            "id" : 12,
+            "title" : "COSRX",
+            "price" : 289000,
+            "image" : "./product_img/sanpham12.jpg"
+        }
+    ]
+}

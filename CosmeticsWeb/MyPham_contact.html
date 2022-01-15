@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Tư Vấn</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="MyPham_contact.css">
+    <script src="https://kit.fontawesome.com/9a9d3471c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-white">
+        <div class="container">
+            <a href="MyPham_home.html" style="color: #42ba96;">
+                <img src="showcase/brand_img_1.png" style="height: 60px;" width="82px" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <form class="d-flex">
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success rounded-circle" type="submit"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                    <li class="nav-item ">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user text-success"></i>Tài Khoản
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="MyPham_register_login.html">Đăng Nhập/Đăng Ký</a></li>
+                                <li><a class="dropdown-item" href="MyPham_accountpage.html">Tài Khoản</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item cart-icon">
+                        <a href="#" class="btn text-success cart-icon">
+                            <i class="fas fa-shopping-cart"></i>Giỏ Hàng
+                            <span class="cart-items"><b>0</b></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="navContainer bg-success tabs">
+            <div class="tab-item active">
+                <a class="nav-link" href="MyPham_home.html">Trang chủ</a>
+            </div>
+            <div class="tab-item">
+                <a class="nav-link" href="MyPham_shop.html">Xem sản phẩm</a>
+            </div>
+            <div class="tab-item">
+                <a class="nav-link" href="MyPham_contact.html">Tư vấn sản phẩm</a>
+            </div>
+            <div class="tab-item">
+                <a class="nav-link" href="MyPham_home.html#tuyendung">Tuyển dụng</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- Cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <div class="row">
+                <div class="col">
+                    <span class="close-cart">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                </div>
+                <div class="col text-end">
+                    <a class="btn btn-success" href="MyPham_maincart.html" style="width: 130px;">
+                        <i class="fas fa-wallet"></i>
+                        Thanh toán 
+                        <!-- <i class="fas fa-chevron-circle-right"></i> -->
+                    </a>
+                </div>
+            </div>
+            <div class="pt-3">
+                <h2>Giỏ Hàng</h2>
+            </div>
+            
+            <div class="cart-content">
+                <!-- cart item -->
+                <!-- <div class="cart-item"> -->
+                    
+                <!-- </div> -->
+            </div>
+            <div class="cart-footer">
+                <h3>Tổng Cộng : <span class="cart-total">0</span>đ</h3>
+                <button class="clear-cart btn btn-warning">Xóa giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Cart -->
+    <!-- contact menu -->
+    <div class="container" style="min-height: 405px;">
+        <div class="row pt-5 pb-5">
+            <div class="col-6 border border-success pb-3">
+                <div class="text-center">
+                    <h2>Thông tin người dùng</h2>
+                </div>
+                <div class="user-info-container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="user-form" placeholder="Họ & Tên">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="user-form" placeholder="Điện thoại">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="user-form" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5>Thông tin cần tư vấn: </h5>
+                            <textarea class="user-advisory" name="" id=""></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><button class="btn btn-primary">Xác nhận</button></div>
+            </div>
+            <div class="col-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3130264457905!2d106.66929571456343!3d10.78731999231413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed465ff81b3%3A0x77e2cc5be0aee464!2zMTAxMSBIb8OgbmcgU2EsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MDAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1639542199155!5m2!1svi!2s"
+                    width="600" height="252" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <!-- end of contact menu -->
+    <!-- footer -->
+    <footer class="bg-success text-light pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img src="showcase/brand_img_1.png" style="height: 147px;" width="200px" alt="">
+                </div>
+                <div class="col-4">
+                    <h5>Mỹ Phẩm Chính Hãng <span class="text-dark">Cosmos Cosmetics</span></h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 237/61 Trần Văn Đang, P.11, Q.3 <br>
+                        Hotline: <span class="text-dark"><b>1900 2138</b></span> <br>
+                        Tel: <span class="text-dark"><b>(84.28)20112138</b></span> <br>
+                        Fax: <span class="text-dark"><b>(84.28)20112138</b></span>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h5 class="ms-4">Theo dõi chúng tôi:</h5>
+                    <a href=""><i class="fab fa-facebook me-3" style="font-size: 40px; color: black;"></i></a>
+                    <a href=""><i class="fab fa-youtube me-3" style="font-size: 40px;color: black;"></i></a>
+                    <a href=""><i class="fab fa-twitter me-3" style="font-size: 40px;color: black;"></i></a>
+                    <a href=""><i class="fab fa-google-plus me-2" style="font-size: 40px;color: black;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script src="MyPham_shop.js"></script>
+</body>
+
+</html>

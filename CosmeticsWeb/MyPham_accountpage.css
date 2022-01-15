@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+    --primaryColor: 	#198754;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+}
+.navContainer {
+    width: 100%;
+    padding-left: 90px;
+    display: inline-flex;
+}
+#navbar {
+    padding:0;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+.title {
+    padding-left: 200px;
+    padding-right: 200px;
+    border-bottom: 1px solid pink;
+}
+.list-title {
+    color: black;
+    text-decoration: none;
+    cursor: pointer
+}
+.list-title :active{
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid pink;
+}
+/* body */
+body {
+    position: relative;
+    height: 100%;
+}
+/* button */
+.account-button {
+    text-decoration: none;
+    color: white;
+    background-color: #198754;
+    line-height: 35.2px;
+    width: 100%;
+    display: block;
+}
+.account-button:hover {
+    background-color: white;
+    color: black;
+}
+/* Notification */
+.notification {
+    min-height: 100px;
+    
+}
+.news {
+    padding: 20px;
+}
+.date {
+    display: block;
+    justify-items: center;
+    border-right: 1px solid pink;
+}
+
+.address {
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid pink;
+    border-radius: 0px;
+    background-color: #eee;
+}
+.bill-title{
+    background-color: var(--primaryColor);
+    width: 100%;
+    display:inline-flex;
+    align-items: center;
+}
+.products {
+    height: 100px; 
+    display: inline-flex;
+    align-items: center; 
+    width: 100%;
+    border-bottom: 2px solid pink;
+}
+.tabShow {
+    display: none;
+}
