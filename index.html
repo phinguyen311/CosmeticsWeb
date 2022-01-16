@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-white fixed-top" style="box-shadow: 0 4px 4px rgba(0,0,0,0.1);">
         <div class="container">
             <a href="./index.html" style="color: #42ba96;">
                 <img src="./CosmeticsWeb/showcase/brand_img_1.png" style="height: 60px;" width="82px" alt="">
@@ -31,9 +31,14 @@
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <form class="d-flex">
-                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-circle" type="submit"><i class="fas fa-search"></i></button>
+                    <form class="d-flex search-input">
+                        <a href="" target="_blank" hidden></a>
+                        <input class="form-control me-2 rounded-pill" type="text" placeholder="Search" aria-label="Search">
+                        <div class="autocom-box">
+                            alo alo
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                        <button class="btn btn-outline-success rounded-circle" type="submit"><i class="fas fa-search icon"></i></button>
                     </form>
                     <li class="nav-item ">
                         <div class="dropdown">
@@ -57,17 +62,24 @@
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg" id = "navbar">
-        <div class = "navContainer bg-success tabs">
-            <div class="tab-item active">
+        <button 
+                class="navbar-toggler bg-success w-100"  style="border-radius: 0;"
+                type="button"
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navlink">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse navContainer bg-success" id="navlink">
+            <div class="col-sm-3">
                 <a class="nav-link" href="./index.html">Trang chủ</a>
             </div>
-            <div class="tab-item">
+            <div class="col-sm-3">
                 <a class="nav-link" href="./CosmeticsWeb/MyPham_shop.html">Xem sản phẩm</a>
             </div>
-            <div class="tab-item">
+            <div class="col-sm-3">
                 <a class="nav-link" href="./CosmeticsWeb/MyPham_contact.html">Tư vấn sản phẩm</a>
             </div>
-            <div class="tab-item">
+            <div class="col-sm-3">
                 <a class="nav-link" href="#tuyendung">Tuyển dụng</a>
             </div>
         </div>
@@ -76,8 +88,8 @@
     <!-- hero -->
     <header class="hero-shop">
         <div class="banner">
-            <h5 class="banner-title">Chào mừng đến với</h5>
-            <h1 class="banner-title text-success">COSMOS COSMETICS</h1>
+            <h5 class="banner-title" id="hero-welcome">Chào mừng đến với</h5>
+            <h1 class="banner-title text-success" id="hero-welcome-2">COSMOS COSMETICS</h1>
             <a class=" btn banner-btn" href="./CosmeticsWeb/MyPham_shop.html"><i class="fas fa-shopping-cart"></i> Mua sắm ngay</a>
         </div>
     </header>
@@ -91,15 +103,15 @@
                 <img src="./CosmeticsWeb/showcase/brand_img_1.png" alt="">
             </div>
             <div class="col-md-6 border-left border-dark border-2 pt-4" id="brand-intro">
-                <p class="lead">
-                    Giải thích ý nghĩa của tên Cosmos Cosmetics <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="lead">Giải thích ý nghĩa của tên Cosmos Cosmetics</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Facere officia in quasi. Rerum quidem enim aspernatur non 
                     accusantium deserunt autem nesciunt unde, hic voluptatem 
                     perspiciatis earum exercitationem laudantium libero. Sed?
                 </p>
+
+                <p class="lead">Giải thích web có những dịch vụ gì</p>
                 <p>
-                    Giải thích web có những dịch vụ gì <br>
                     Lorem ipsum dolor sit amet consectetur, 
                     adipisicing elit. Facere temporibus accusantium rerum? 
                     Molestias quaerat labore, minima dolorem deserunt quis 
@@ -111,8 +123,8 @@
     </div>
     <header class="hero-advisory" id="tuyendung">
         <div class="banner">
-            <h1 class="banner-title text-success">COSMOS COSMETICS</h1>
-            <h5 class="banner-title">Tìm kiếm bạn đồng hành</h5>
+            <h1 class="banner-title text-success" id="hero-welcome-2">COSMOS COSMETICS</h1>
+            <h5 class="banner-title" id="hero-welcome">Tìm kiếm bạn đồng hành</h5>
             <a class=" btn banner-btn" href="./CosmeticsWeb/MyPham_recruit.html"><i class="fas fa-id-badge"></i> Thông tin ứng tuyến</a>
         </div>
     </header>
@@ -179,6 +191,7 @@
     <!--End of footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./CosmeticsWeb/suggestions.js"></script>
     <script src="./CosmeticsWeb/MyPham_home.js"></script>
 </body>
 </html>

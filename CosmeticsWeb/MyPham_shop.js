@@ -17,7 +17,7 @@ class UI {
         let result ="";
         obj.forEach(({title,image,id,price}) => {
             result += `
-            <div class="col-lg-3">
+            <div class="col-md-3">
                 <!-- item 1 -->
                 <article class = "product">
                     <div class="card shadow">
