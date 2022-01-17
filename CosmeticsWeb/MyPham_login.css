@@ -57,6 +57,49 @@ body {
     line-height: 50px;
     padding: 10px;
 }
+/* search box */
+.search-input input{
+  width: 100%;
+  outline: none;
+  border: var(--primaryColor) 1px solid;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  height: 30px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 50%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
 /* --------------- Cart ---------------- */
 .cart-overlay {
     position: fixed;
@@ -151,3 +194,96 @@ body {
   }
   
   /* --------------- End of Cart ---------------- */
+  @media screen and (min-width: 1440px) {
+
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    
+  }
+  @media screen and (min-width: 992px) and (max-width: 1023px) {
+    
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #brand-img img{
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 426px) and (max-width: 767px) {
+    #ft-address,#ft-contact{
+      text-align: center;
+    }
+    #brand-img img{
+      width: 75%;
+    }
+    #navlink{
+      padding: 0;
+    }
+    #brand-intro{
+      padding: 50px;
+    }
+  }
+  @media screen and (min-width: 376px) and (max-width: 425px) {
+    #ft-address,#ft-contact{
+      text-align: center;
+    }
+    #brand-img img{
+      width: 75%;
+    }
+    #navlink{
+      padding:0;
+    }
+    #brand-intro{
+      padding: 50px;
+    }
+    #navText{
+      font-size: 12px;
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 375px) {
+    #ft-address,#ft-contact{
+      text-align: center;
+    }
+    #brand-img img{
+      width: 75%;
+    }
+    #navlink{
+      padding:0;
+    }
+    #hero-welcome{
+      font-size: 16px;
+    }
+    #hero-welcome-2{
+      font-size: 22px;
+    }
+    #brand-intro{
+      padding: 50px;
+    }
+    #navText{
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    #ft-address,#ft-contact{
+      text-align: center;
+    }
+    #brand-img img{
+      width: 50%;
+    }
+    #navlink{
+      padding:0;
+    }
+    #hero-welcome{
+      font-size: 12px;
+    }
+    #hero-welcome-2{
+      font-size: 16px;
+    }
+    #brand-intro{
+      padding: 50px;
+    }
+    #navText{
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }

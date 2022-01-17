@@ -82,10 +82,10 @@ class UI {
         const div = document.createElement('div');
         div.classList.add('cart-item');
         div.innerHTML = `
-        <img src= ${item.image} alt="product">
+        <img src= "CosmeticsWeb/${item.image}" alt="product">
         <div>
             <h4>${item.title}</h4>
-            <h5>${item.price/1000}.000đ</h5>
+            <h5>${item.price/1000} .000đ</h5>
             <span class="remove-item" data-id=${item.id}>Xóa khỏi giỏ hảng</span>
         </div>
         <div>

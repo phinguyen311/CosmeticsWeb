@@ -5,7 +5,7 @@
             "id" : 1,
             "title" : "HADA LABO",
             "price" : 95000,
-            "image" : "./product_img/sanpham1.jpg"
+            "image" : "product_img/sanpham1.jpg"
         },
         {
             "id" : 2,

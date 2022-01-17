@@ -52,6 +52,7 @@ body {
     text-decoration: none;
     border-bottom: 2px solid pink;
 }
+/* search box */
 .search-input input{
   width: 100%;
   outline: none;
@@ -138,31 +139,6 @@ body {
     color: var(--primaryColor);
   }
   /* --------------- End of Hero ---------------- */
-  span.social{
-    width: 34px;
-    height: 34px;
-    display: inline-block;
-}
-#facebook{
-    background: url(s-icons.png);
-    background-position: 0 0;
-}
-#twitter{
-    background:url(s-icons.png);
-    background-position: -34px 0;
-}
-#google{
-    background:url(s-icons.png);
-    background-position: -68px 0;
-}
-.txtSocial{
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -22px;
-    padding-left: 10px;
-    text-decoration: none;
-    color: royalblue;
-}
 /* --------------- Cart ---------------- */
 .cart-overlay {
   position: fixed;
@@ -278,7 +254,7 @@ body {
     text-align: center;
   }
   #brand-img img{
-    width: 100%;
+    width: 75%;
   }
   #navlink{
     padding:0;
@@ -286,13 +262,16 @@ body {
   #brand-intro{
     padding: 50px;
   }
+  #navText{
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 321px) and (max-width: 375px) {
   #ft-address,#ft-contact{
     text-align: center;
   }
   #brand-img img{
-    width: 100%;
+    width: 75%;
   }
   #navlink{
     padding:0;
@@ -306,13 +285,17 @@ body {
   #brand-intro{
     padding: 50px;
   }
+  #navText{
+    font-size: 12px;
+    font-weight: bold;
+  }
 }
 @media screen and (max-width: 320px) {
   #ft-address,#ft-contact{
     text-align: center;
   }
   #brand-img img{
-    width: 100%;
+    width: 50%;
   }
   #navlink{
     padding:0;
@@ -325,5 +308,9 @@ body {
   }
   #brand-intro{
     padding: 50px;
+  }
+  #navText{
+    font-size: 10px;
+    font-weight: bold;
   }
 }

@@ -32,9 +32,13 @@
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <form class="d-flex">
-                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-circle" type="submit"><i class="fas fa-search"></i></button>
+                    <form class="d-flex search-input">
+                        <a href="" target="_blank" hidden></a>
+                        <input class="form-control me-2 rounded-pill" type="text" placeholder="Search" aria-label="Search">
+                        <div class="autocom-box">
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                        <button class="btn btn-outline-success rounded-circle" type="submit"><i class="fas fa-search icon"></i></button>
                     </form>
                     <li class="nav-item ">
                         <div class="dropdown">
@@ -59,18 +63,25 @@
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg" id = "navbar">
-        <div class = "navContainer bg-success tabs">
-            <div class="tab-item active">
-                <a class="nav-link" href="../index.html">Trang chủ</a>
+        <button 
+                class="navbar-toggler bg-success w-100"  style="border-radius: 0;"
+                type="button"
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navlink">
+                <i class="fas fa-chevron-down" style="color: black;"></i>
+        </button>
+        <div class = "collapse navbar-collapse navContainer bg-success" id="navlink">
+            <div class="col-sm-3" >
+                <a class="nav-link" id="navText" href="../index.html">Trang chủ</a>
             </div>
-            <div class="tab-item">
-                <a class="nav-link" href="MyPham_shop.html">Xem sản phẩm</a>
+            <div class="col-sm-3">
+                <a class="nav-link" id="navText" href="MyPham_shop.html">Xem sản phẩm</a>
             </div>
-            <div class="tab-item">
-                <a class="nav-link" href="MyPham_contact.html">Tư vấn sản phẩm</a>
+            <div class="col-sm-3">
+                <a class="nav-link" id="navText" href="MyPham_contact.html">Tư vấn sản phẩm</a>
             </div>
-            <div class="tab-item">
-                <a class="nav-link" href="MyPham_home.html#tuyendung">Tuyển dụng</a>
+            <div class="col-sm-3">
+                <a class="nav-link" id="navText" href="MyPham_recruit.html">Tuyển dụng</a>
             </div>
         </div>
     </nav>
@@ -248,6 +259,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script src="suggestions.js"></script>c
 <script src="MyPham_item.js"></script>
 </body>
 </html>
