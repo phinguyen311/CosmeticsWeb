@@ -104,7 +104,6 @@ class UI {
         cart = Storage.getCart();
         this.setCartValues(cart);
         this.populateCart(cart);
-        cartBtn.addEventListener('click', this.showCart)
         closeCart.addEventListener('click', this.hideCart)
     }
     populateCart(cart) {

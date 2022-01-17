@@ -39,20 +39,20 @@
                         </div>
                         <button class="btn btn-outline-success rounded-circle" type="submit"><i class="fas fa-search icon"></i></button>
                     </form>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <div class="dropdown">
                             <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-user text-success"></i>Tài Khoản
                             </a>
-                          
+
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li><a class="dropdown-item" href="MyPham_register_login.html">Đăng Nhập/Đăng Ký</a></li>
-                                <li><a class="dropdown-item" href="MyPham_accountpage.html">Tài Khoản</a></li>
+                              <li><a class="dropdown-item" href="MyPham_accountpage.html">Tài Khoản</a></li>
                             </ul>
-                            </div>
+                        </div>
                     </li>
                     <li class="nav-item cart-icon">
-                        <a href="MyPham_maincart.html" class="btn text-success cart-icon">
+                        <a href="#" class="btn text-success cart-icon">
                             <i class="fas fa-shopping-cart"></i>Giỏ Hàng 
                             <span class="cart-items"><b>0</b></span>
                         </a>
@@ -84,7 +84,6 @@
             </div>
         </div>
     </nav>
-    <!-- end of navbar -->
     <!-- register -->
     <form action="index.html" method="post" id="registration_form">
         <h2 class="text-dark">TẠO TÀI KHOẢN</h2>
@@ -93,24 +92,24 @@
             <div class="row">
                 <div class="col-6">
                     <label for="name">Họ & Tên*:</label>
-                    <input type="text" id="form_name" name="user_name">
+                    <input class="regis-form" type="text" id="form_name" name="user_name">
                     <span class="error_form" id="name_error_message"></span>
         
                     <label for="mail">Email*:</label>
-                    <input type="email" id="form_email" name="user_email">
+                    <input class="regis-form" type="email" id="form_email" name="user_email">
                     <span class="error_form" id="email_error_message"></span>
         
                     <label for="mail">Số điện thoại*:</label>
-                    <input type="text" id="form_phonenumber" name="user_phone">
+                    <input class="regis-form" type="text" id="form_phonenumber" name="user_phone">
                     <span class="error_form" id="phonenumber_error_message"></span>
                 </div>
                 <div class="col-6">
                     <label for="password">Mật khẩu*:</label>
-                    <input type="password" id="form_password" name="user_password">
+                    <input class="regis-form" type="password" id="form_password" name="user_password">
                     <span class="error_form" id="password_error_message"></span>
         
                     <label for="password">Xác nhận mật khẩu*:</label>
-                    <input type="password" id="form_retype_password" name="user_repassword">
+                    <input class="regis-form" type="password" id="form_retype_password" name="user_repassword">
                     <span class="error_form" id="retype_password_error_message"></span>
                 </div>
             </div>
